@@ -1,0 +1,215 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 21px;
+  line-height: 1.6;
+  color: #333;
+  min-height: 100vh; /* This ensures that the height of the body element is at least 100% of the viewport height */
+  position: relative; /* This is needed to position the footer element relative to the body element */
+}
+
+/* Header Styles */
+header {
+  background-color: #0a304e;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.link
+{
+   color:#fff;
+   text-decoration: none; 
+   background-color: none;
+}
+
+p {
+  padding: 0em 1em 1em;
+}
+
+h2 {
+  padding: 1em 1em 1em;
+}
+
+h3 {
+  padding: 1em;
+}
+
+div {
+  padding: 0em 1em 0em;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: all .5s ease;
+  color: #fff;
+  border: 1px transparent;
+  text-align: center;
+  line-height: 1;
+  background-color : transparent;
+  padding: 6px;
+  outline: none;
+  border-radius: 4px;
+}
+
+nav a:hover {
+    color: #001F3F;
+    background-color: #fff;
+}
+
+/* Main Content Styles */
+section#content {
+  margin: 20px;
+}
+
+
+#profile-img {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.btn {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 21px;
+  color: #fff;
+  text-decoration: none;
+  transition: all .5s ease;
+  color: #0a304e;
+  text-align: center;
+  line-height: 1;
+  background-color : transparent;
+  padding: 16px;
+  outline: none;
+  border: 1px navy blue;
+  border-color: #0a204e;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+
+
+.btn:hover {
+  color: #fff;
+  background-color: #0a304e;
+}
+
+
+.btn-container {
+  text-align: center;
+
+}
+
+
+
+/* Footer Styles */
+footer {
+  background-color: #f9f9f9;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  position: absolute; /* This positions the footer element relative to the body element */
+  bottom: 0; /* This positions the footer element at the bottom of the body element */
+  width: 100%; /* This ensures that the footer element spans the full width of the body element */
+}
+
+.social-media {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media li {
+  margin: 0 10px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+.copyright {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.spacer{
+  margin-bottom: 70px; /* footer height. Space for footer so it doesn't hide content */
+  visibility: hidden; 
+}
+
+
+
+
+span {
+  display: inline-block;
+  padding: 1em 0em 1em;
+}
+
+
+
+span.horizontal-shake {
+  animation: horizontal-shaking 0.35s 3;
+}
+
+
+li.icon-animation:hover{
+  animation: jump-shaking 0.75s 1;
+  animation-fill-mode: forwards;
+}
+
+
+
+@keyframes horizontal-shaking {
+  0% { transform: translateX(0) }
+  25% { transform: translateX(15px) }
+  50% { transform: translateX(-15px) }
+  75% { transform: translateX(15px) }
+  100% { transform: translateX(0) }
+}
+
+
+@keyframes jump-shaking {
+  0% { transform: translateX(0) }
+  25% { transform: translateY(-9px) }
+  35% { transform: translateY(-9px) rotate(17deg) }
+  55% { transform: translateY(-9px) rotate(-17deg) }
+  65% { transform: translateY(-9px) rotate(17deg) }
+  75% { transform: translateY(-9px) rotate(-17deg) }
+  100% { transform: translateY(-9px) rotate(0) }
+}
