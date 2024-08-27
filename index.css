@@ -1234,6 +1234,7 @@
   }
   .company-logos {
     max-width: 20%;
+    align: center;
   }
   .bullet-list {
     max-width: 60%;
