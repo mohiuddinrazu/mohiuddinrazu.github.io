@@ -998,7 +998,7 @@
 }
 
 .company-logos {
-  max-width: 15%;
+  max-width: 200px;
   display: block;
   margin: 0 auto;
   margin-top: 2em; 
@@ -1111,7 +1111,7 @@ hr {
   }
 
   .company-logos {
-    max-width: 15%;
+    max-width: 180px;
     display: block;
     margin: 0 auto;
     margin-top: 2em; 
@@ -1368,7 +1368,7 @@ hr {
   }
 
   .company-logos {
-    max-width: 20%;
+    max-width: 150px;
     display: block;
     margin: 0 auto;
     margin-top: 2em; 
@@ -1770,7 +1770,7 @@ hr {
   }
   
   .company-logos {
-    max-width: 20%;
+    max-width: 140px;
     display: block;
     margin: 0 auto;
     margin-top: 2em; 
