@@ -767,6 +767,24 @@
   align-items: flex-start;
   flex-direction: row;
 }
+
+#floating-social-buttons {
+  position: fixed;
+  bottom: 30px; /*distance from the bottom */
+  right: 10px;  /*distance from the left */
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+#floating-social-buttons a {
+  margin-bottom: 10px; /* Spacing between buttons */
+}
+
+#floating-social-buttons a img { /* Target icons within the size */
+  width: 30px; 
+  height: 30px;
+}
 .home-container13 {
   height: 100%;
   display: flex;
