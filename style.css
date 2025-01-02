@@ -29,8 +29,8 @@
   --dl-space-space-tripleunit: 24px;
 }
 .teleport-show {
-  display: flex !important;
-  transform: none !important;
+  display: flex;
+  transform: none;
 }
 .list {
   width: 100%;
