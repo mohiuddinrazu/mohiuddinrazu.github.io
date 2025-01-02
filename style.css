@@ -50,6 +50,32 @@
   border-radius: 4px;
   background-color: var(--dl-color-gray-white);
 }
+
+#floating-social-buttons {
+  position: fixed;
+  bottom: 30px; /*distance from the bottom */
+  right: 10px;  /*distance from the left */
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+#floating-social-buttons a {
+  margin-bottom: 10px; /* Spacing between buttons */
+}
+
+#floating-social-buttons a img { /* Target icons within the size */
+  width: 30px; 
+  height: 30px;
+}
+
+#floating-social-buttons a {
+
+  opacity: 0; /* Initial hidden state */
+  animation: slideUp 0.5s ease-in-out forwards; /* appear animation */
+  animation-delay: 0.5s; /* animation delay by time */
+}
+
 .list-item {
   display: list-item;
 }
