@@ -1,603 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8C8Q7KKHT4"></script>
-      <script>
-       	window.dataLayer = window.dataLayer || [];
-       	function gtag(){dataLayer.push(arguments);}
-       	gtag('js', new Date());
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Razu Mohiuddin</title>
+  <meta name="description" content="Razu Mohiuddin — Data Scientist II at the Neurological Institute, Cleveland Clinic. PhD in Physics, CWRU. Machine learning, neutrino physics, clinical data science." />
+  <meta property="og:title"       content="Razu Mohiuddin" />
+  <meta property="og:description" content="Data Scientist II · Neurological Institute, Cleveland Clinic" />
+  <meta property="twitter:card"   content="summary_large_image" />
+  <link rel="shortcut icon" href="icon.ico" />
 
-      	gtag('config', 'G-8C8Q7KKHT4');
-      </script>
+  <!--
+    Theme init — MUST come before stylesheet to prevent flash-of-wrong-theme.
+    Reads localStorage and sets data-theme on <html> before any CSS is painted.
+  -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
 
-    <title>Razu Mohiuddin</title>
-    <meta property="og:title" content="Razu Mohiuddin" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <link rel="shortcut icon" href="icon.ico" />
+  <!-- Google Fonts: Inter (single request, 4 weights) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="base.css">
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-  </head>
-  <body>
-    <div>
-      <link href="./index.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 
-      <div id="home" class="home-container">
-        <header data-role="Header" class="home-navbar-container">
-          <nav class="home-navbar">
-            <a href="#home" class="home-heading Card-Heading">Razu Mohiuddin</a>
-            <div class="home-links-container">
-              <a href="#research" class="home-link Navbar-Link">Research</a>
-              <a href="#pubs" class="home-link01 Navbar-Link">Publications</a>
-              <a href="#about-me" class="home-link02">About</a>
-              <a href="#contact-section" class="home-link03 Navbar-Link">Contact</a>
-            </div>
-            <div data-role="BurgerMenu" class="home-burger-menu">
-              <svg viewBox="0 0 1024 1024" class="home-icon" aria-label="Open mobile menu">
-                <path
-                  d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
-                ></path>
-              </svg>
-            </div>
-            <div data-role="MobileMenu" class="home-mobile-menu">
-              <div class="home-container01">
-                <span class="home-heading1">Razu Mohiuddin</span>
-                <div data-role="CloseMobileMenu" class="home-close-menu">
-                  <svg viewBox="0 0 1024 1024" class="home-icon02">
-                    <path
-                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-              <div class="home-links-container1">
-                <a href="#research" class="home-link04 Navbar-Link">Research</a>
-                <a href="#pubs" class="home-link05 Navbar-Link">Publications</a>
-                <a href="#about-me" class="home-link06 Navbar-Link">About</a>
-                <a href="#contact-section" class="home-link07 Navbar-Link">Contact</a>
-              </div>
-            </div>
-          </nav>
-        </header>
-        <div class="home-section-separator"></div>
-        <section class="home-home">
-          <div class="home-hero">
-            <div class="home-image">
-              <div class="home-container02">
-                <img
-                  alt="Profile picture of Razu Mohiuddin"
-                  src="public/razu_hs_crop-1100w.jpg"
-                  class="home-image01"
-                />
-              </div>
-            </div>
-            <div class="home-hero-text-container">
-              <div class="home-cta-btn-container"></div>
-            </div>
-            <div class="home-container03">
-              <h1 class="home-heading2">
-                <span class="Section-Heading home-text">Razu Mohiuddin</span>
-                <br />
-                <span class="home-text02">Pushing the Boundaries of Physics with Advanced Data Techniques</span>
-                <br />
-              </h1>
-              <p class="home-text04">
-                <span>Hi there!</span>
-                <br class="home-text06" />
-                <br />
-                <span>
-                  I am an experimental particle astrophysics doctoral student at
-                  Case Western Reserve University. I'm currently working in the
-                  Monreal Lab and the Project 8 collaboration, pursuing my
-                  research interests in statistical modeling, deep learning, and neutrino physics.
-                </span>
-              </p>
-              <a
-                href="https://case.edu"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-link08"
-              >
-                <img
-                  alt="Case Western Reserve University Logo"
-                  src="public/cwru_two-line_horizontal_(primary)_logo_rgb_blue-200h.png"
-                  loading="eager"
-                  class="home-image02"
-                />
-              </a>
-              <span id="research-anchor" class="home-text09">&nbsp; &nbsp;</span>
-            </div>
-          </div>
-        </section>
-        <section id="research" class="home-research">
-          <div class="home-heading-container">
-            <h2 class="home-text10">
-              <span class="Section-Heading home-text11">Research</span>
-              <br />
-            </h2>
-          </div>
-          <div class="home-card">
-            <div class="home-icon-container">
-              <a
-                href="https://www.project8.org/"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-link09"
-              >
-                <img
-                  alt="Project 8 Collaboration Logo"
-                  src="public/project%208%20logo-700w.png"
-                  class="home-image03"
-                />
-              </a>
-            </div>
-            <div class="home-content-container">
-              <p class="home-text13">
-                <span>
-                  The Project 8 experiment aims to measure the mass of the
-                  neutrino, a subatomic particle with extremely low mass,
-                  through the analysis of the beta decay of tritium atoms. The
-                  experiment uses a novel technique called cyclotron radiation
-                  emission spectroscopy (CRES) to measure the energy spectrum of
-                  electrons emitted in the radioactive decay of tritium. By
-                  measuring the energy distribution of the emitted electrons,
-                  Project 8 aims to determine the absolute mass of neutrinos
-                  with unprecedented precision.
-                </span>
-                <br />
-              </p>
-              <img
-                alt="Tritium beta decay diagram for Project 8"
-                src="public/p8_decay-1000w.png"
-                loading="eager"
-                class="home-pasted-image"
-              />
-              <p class="home-text16">
-                <span>
-                  Within the Project 8 Collaboration, I am working in a few
-                  different projects. As part of the machine learning team, we
-                  implemented deep convolutional neural network autoencoder
-                  (U-Net based) to segment highly class-imbalanced spectrogram
-                  images, improving efficiency over traditional methods by more
-                  than 20%. I have pioneered a novel use of natural language
-                  processing (NLP) techniques to identify complex patterns within noisy signals, 
-                  enabling signal detection in extremely low power situation.
-                  Currently, I am exploring the use of physics-informed generative AI in reproducing 
-                  complicated electromagnetic signals from particle interactions.
-                  I am also working with various simulation projects, including 
-                  resonant cavity mode filtering and manipulation, sensitivity analysis, etc.
-                </span>
-                <br />
-                <span>
-                  Check out recent publications in the following section.
-                </span>
-              </p>
-              <h3 class="home-heading3">Past work</h3>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8C8Q7KKHT4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-8C8Q7KKHT4');
+  </script>
 
-                  <img
-                  alt="Hoffmann-La Roche Logo"
-                  src="public/Hoffmann-La_Roche_logo.svg"
-                  href="https://www.roche.com/"
-                  target="_blank"
-                  class="company-logos"
-                />
-                  <p>In the summer of 2024, I interned at Roche Diabetes Care Inc. in the Mathematics, Algorithms & Data Sciences Department, focusing on algorithms and advanced analytics. My responsibilities included:</p>
-                    <ul class="bullet-list">
-                        <li>Using real-world data to develop virtual patient models</li>
-                        <li>Developing models for use in diabetes management tools for patients</li>
-                        <li>Assessment of novel techniques to reduce external dependencies</li>
-                        <li>Actively engaging with the project team to discuss the project goals, tasks and set priorities</li>
-                        <li>Performing independent data analysis and model building based on team priorities</li>
-                        <li>Reporting on findings to the project team, department and R&D</li>
-                    </ul>
-                    <hr>
-                    <p>
-                        I worked with the Gravitational Wave International Committee 
-                        (GWIC) and <a href="https://www.linkedin.com/school/communityofphysics/" target="_blank" rel="noreferrer noopener" class="home-link10">
-                        Community of Physics </a> in the past.
-                </p>
-            </div>
-          </div>
-        </section>
-        <section id="pubs" class="home-publications">
-          <div class="home-max-content-width-container">
-            <div class="home-heading-container1">
-              <h2 class="Section-Heading">Publications</h2>
-            </div>
-            <div class="home-content-container1">
-              <div class="home-about-1">
-                <div class="home-container04">
-                  <svg viewBox="0 0 1024 1024" class="home-icon04" aria-hidden="true">
-                    <path
-                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
-                    ></path>
-                  </svg>
-                  <p class="home-text24">
-                    <span>
-                      "Deep learning based event reconstruction for cyclotron radiation emission spectroscopy"
-                      Machine Learning: Sci. Technol.5 (2024) 025026
-                    </span>
-                    <br class="Card-Text" />
-                  </p>
-                </div>
-                <div class="home-container05">
-                  <svg viewBox="0 0 1024 1024" class="home-icon06" aria-hidden="true">
-                    <path
-                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
-                    ></path>
-                  </svg>
-                  <p class="home-text24">
-                    <span>
-                      "Tritium Beta Spectrum and Neutrino Mass Limit from
-                      Cyclotron Radiation Emission Spectroscopy "
-                      PhysRevLett.131 (2023) 102502
-                    </span>
-                    <br class="Card-Text" />
-                  </p>
-                </div>
-                <div class="home-container05">
-                  <svg viewBox="0 0 1024 1024" class="home-icon06" aria-hidden="true">
-                    <path
-                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
-                    ></path>
-                  </svg>
-                  <p class="home-text27">
-                    "SYNCA: A Synthetic Cyclotron Antenna for the Project 8
-                    Collaboration" JINST 18 (2023) 01, P01034
-                  </p>
-                </div>
-                <div class="home-container06">
-                  <svg viewBox="0 0 1024 1024" class="home-icon08" aria-hidden="true">
-                    <path
-                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
-                    ></path>
-                  </svg>
-                  <p class="home-text28">
-                    "Deep Learning based CRES track and event reconstruction in
-                    Project 8" APS DNP (2022)
-                  </p>
-                </div>
-                <div class="home-container07">
-                  <svg viewBox="0 0 1024 1024" class="home-icon10" aria-hidden="true">
-                    <path
-                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
-                    ></path>
-                  </svg>
-                  <p class="home-text29">
-                    "The Project 8 Neutrino Mass Experiment" 2022 Snowmass |
-                    arXiv: 2203.07349
-                  </p>
-                </div>
-                <div class="home-container08">
-                  <svg viewBox="0 0 1024 1024" class="home-icon12" aria-hidden="true">
-                    <path
-                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
-                    ></path>
-                  </svg>
-                  <p class="home-text30">
-                    "Viterbi decoding of CRES signals in Project 8"&nbsp;New
-                    J.Phys. 24 (2022) 5, 053013
-                  </p>
-                </div>
-                <div class="home-container09">
-                  <svg viewBox="0 0 1024 1024" class="home-icon14" aria-hidden="true">
-                    <path
-                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
-                    ></path>
-                  </svg>
-                  <p class="home-text31">
-                    "Bayesian analysis of a future β decay experiment's
-                    sensitivity to neutrino mass scale and ordering" Phys.Rev.C
-                    103 (2021) 6, 065501
-                  </p>
-                </div>
-                <a
-                  href="https://inspirehep.net/authors/1840725"
-                  id="all-pubs-link"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="home-link11 button Anchor"
-                >
-                  CHECK ALL PUBLICATIONS
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="about-me" class="home-about">
-          <div class="home-heading-container2">
-            <h2 class="home-text32">
-              <span class="Section-Heading home-text33">About</span>
-              <br />
-            </h2>
-            <p class="home-text35">
-              <span class="Section-Text">
-                I am a graduate student in Physics at Case Western Reserve
-                University, where I am conducting research in the exciting field
-                of neutrino physics.
-              </span>
-              <br class="Section-Text" />
-              <br class="Section-Text" />
-              <span class="Section-Text">
-                In addition to my academic pursuits, I am an avid photographer
-                with a deep passion for landscapes and architecture photography. 
-                During my free time, if I am not working on a home or car project, I love spending my
-                time acquiring new skills. I enjoy immersing myself in reading,
-                exploring new realms through video games, and staying active
-                through sports like tennis, soccer, and basketball.  
-                I’m always looking for ways to grow and stay engaged.
-              </span>
-              <br />
-            </p>
-          </div>
-          <a
-            href="https://mohiuddinrazu.github.io/Crriculum_Vitae_Razu_Mohiuddin.pdf"
-            id="cv-link"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="home-link12 Anchor button"
-          >
-            Open CV
-          </a>
-        </section>
-        <section id="contact-section" class="home-contact">
-          <div class="home-heading-container3">
-            <h2 class="home-text41">
-              <span class="Section-Heading home-text42">Contact</span>
-              <br />
-            </h2>
-            <div class="home-container10">
-              <p class="home-text44">
-                Feel free to contact me by emailing at
-              </p>
-              <img
-                alt="Razu Mohiuddin's email address"
-                src="public/email_razu.svg"
-                loading="eager"
-                class="home-image04"
-              />
-            </div>
-          </div>
-          <div class="home-card1">
-            <div class="home-card-heading">
-              <h3 class="home-type">Mailing Address</h3>
-            </div>
-            <div class="home-card-content">
-              <div class="home-container11">
-                <address class="home-text45">
-                  <span>CWRU Physics,&nbsp;Rockefeller Building</span>
-                  <br />
-                  <span>Rock 118A</span>
-                  <br />
-                  <span>2076 Adelbert Road</span>
-                  <br />
-                  <span>Cleveland, OH 44106</span>
-                  <br />
-                </address>
-              </div>
-            </div>
-          </div>
-          <div class="home-card2">
-            <div class="home-card-heading1">
-              <h3 class="home-type1">Links</h3>
-            </div>
-            <div class="home-card-content1">
-              <div class="home-container12">
-                <p class="home-text54">
-                  <a
-                    href="https://bmonreal.github.io/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    class="home-link13"
-                  >
-                    Monreal Lab
-                  </a>
-                  <br />
-                  <a
-                    href="https://case.edu/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    class="home-link14"
-                  >
-                    Case Western Reserve University
-                  </a>
-                  <br />
-                  <a
-                    href="https://www.project8.org"
-                    target="_blank"
-                    class="home-link15"
-                  >
-                    The Project 8
-                  </a>
-                  <span class="home-text57">Experiment</span>
-                  <br />
-                  <a
-                    href="https://physics.case.edu/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    class="home-link16"
-                  >
-                    The Physics Department
-                  </a>
-                  <br />
-                  <a
-                    href="https://physics.case.edu/graduate-studies/apply-gradstudies/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    class="home-link17"
-                  >
-                    Physics Graduate Program
-                  </a>
-                  <br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <footer class="home-footer-container">
-          <div class="home-footer">
-            <div class="home-social-links">
-              <div class="home-container13">
-                <div class="home-container14">
-                  <a
-                    href="https://www.linkedin.com/in/mohiuddinrazu/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    class="home-link18"
-                    aria-label="LinkedIn Profile"
-                  >
-                    <img
-                      alt="LinkedIn social media icon"
-                      src="public/linkedin-icon.svg"
-                      class="home-image05"
-                    />
-                  </a>
-                </div>
-                <div class="home-container15">
-                  <a
-                    href="https://scholar.google.com/citations?user=JLcRozYAAAAJ&amp;hl=en"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    class="home-link19"
-                    aria-label="Google Scholar Profile"
-                  >
-                    <img
-                      alt="Google Scholar social media icon"
-                      src="public/google_scholar-icon.svg"
-                      class="home-image06"
-                    />
-                  </a>
-                </div>
-                <div class="home-container16">
-                  <a
-                    href="https://inspirehep.net/authors/1840725"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    class="home-link20"
-                    aria-label="Inspire HEP Profile"
-                  >
-                    <img
-                      alt="Inspire HEP social media icon"
-                      src="public/inspire-icon-200h.jpg"
-                      class="home-image07"
-                    />
-                  </a>
-                </div>
-                <div class="home-container17">
-                  <a
-                    href="https://www.researchgate.net/profile/Razu-Mohiuddin"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    class="home-link21"
-                    aria-label="ResearchGate Profile"
-                  >
-                    <img
-                      alt="ResearchGate social media icon"
-                      src="public/researchgate-icon-200h.png"
-                      class="home-image08"
-                    />
-                  </a>
-                </div>
-                <div class="home-container18">
-                  <a
-                    href="https://github.com/mohiuddinrazu/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    class="home-link22"
-                    aria-label="GitHub Profile"
-                  >
-                    <img
-                      src="public/github.svg"
-                      alt="GitHub social media icon"
-                      class="home-image09"
-                    />
-                  </a>
-                </div>
-                <div class="home-container19">
-                  <a
-                    href="https://www.twitter.com/mohiuddin_razu/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    class="home-link23"
-                    aria-label="X (formerly Twitter) Profile"
-                  >
-                    <img
-                      alt="X (formerly Twitter) social media icon"
-                      src="public/x-logo.svg"
-                      class="home-image10"
-                    />
-                  </a>
-                </div>
-                <div class="home-container20">
-                  <a
-                    href="https://www.instagram.com/mohiuddinrazu/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    class="home-link24"
-                    aria-label="Instagram Profile"
-                  >
-                    <img
-                      src="public/instagram.svg"
-                      alt="Instagram social media icon"
-                      loading="lazy"
-                      class="home-image11"
-                    />
-                  </a>
-                </div>
-                <div class="home-container21">
-                  <a
-                    href="https://www.facebook.com/mohiuddinrazu/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    class="home-link25"
-                    aria-label="Facebook Profile"
-                  >
-                    <img
-                      src="public/facebook-200h.png"
-                      alt="Facebook social media icon"
-                      class="home-image12"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <p class="home-link26">
-              <span>©&nbsp;</span>
-              <span class="Anchor">Razu Mohiuddin, 2026</span>
-            </p>
-          </div>
-        </footer>
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       NAVIGATION
+       ══════════════════════════════════════════════════════════ -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#home" class="nav-brand">Razu Mohiuddin</a>
+
+      <!-- Desktop links -->
+      <div class="nav-links">
+        <a href="#research"     class="nav-link">Research</a>
+        <a href="#timeline"     class="nav-link">Timeline</a>
+        <a href="#publications" class="nav-link">Publications</a>
+        <a href="#skills"       class="nav-link">Skills</a>
+        <a href="#about"        class="nav-link">About</a>
+        <a href="#contact"      class="nav-link">Contact</a>
+        <button class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark mode"></button>
       </div>
+
+      <!-- Hamburger (mobile only) -->
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
-        <div id="floating-social-buttons">
-  <a href="https://www.linkedin.com/in/mohiuddinrazu/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn Profile">
-    <img src="public/linkedin-icon.svg" alt="LinkedIn">
-  </a>
-  <a href="https://scholar.google.com/citations?user=JLcRozYAAAAJ&amp;hl=en" target="_blank" rel="noreferrer noopener" aria-label="Google Scholar Profile">
-    <img src="public/google_scholar-icon.svg" alt="Google Scholar">
-  </a>
-  <a href="https://github.com/mohiuddinrazu/" target="_blank" rel="noreferrer noopener" aria-label="GitHub Profile">
-    <img src="public/github.svg" alt="GitHub">
-  </a>
+  </nav>
+
+  <!-- Mobile overlay menu -->
+  <div class="nav-mobile" aria-hidden="true" aria-label="Mobile navigation">
+    <button class="nav-mobile-close" aria-label="Close menu">&#215;</button>
+    <a href="#research"     class="nav-link">Research</a>
+    <a href="#timeline"     class="nav-link">Timeline</a>
+    <a href="#publications" class="nav-link">Publications</a>
+    <a href="#skills"       class="nav-link">Skills</a>
+    <a href="#about"        class="nav-link">About</a>
+    <a href="#contact"      class="nav-link">Contact</a>
   </div>
-  </body>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         HERO
+         ══════════════════════════════════════════════════════════ -->
+    <section id="home" class="hero section">
+      <div class="container">
+        <div class="hero-inner">
+
+          <div class="hero-photo">
+            <img src="public/razu_hs_crop-1100w.jpg"
+                 alt="Portrait of Razu Mohiuddin"
+                 loading="eager" />
+          </div>
+
+          <div class="hero-text">
+            <h1 class="hero-name">Razu Mohiuddin</h1>
+            <p class="hero-title">Data Scientist</p>
+            <p class="hero-bio">
+              Physicist turned data scientist. I completed my Ph.D. in Physics at Case
+              Western Reserve University in 2025, applying machine learning and statistical
+              modeling to the Project 8 neutrino mass experiment. I now work at the
+              Cleveland Clinic Neurological Institute, using clinical data to improve
+              patient care and outcomes.
+            </p>
+            <a href="https://case.edu"
+               target="_blank"
+               rel="noreferrer noopener"
+               class="hero-credential"
+               aria-label="Case Western Reserve University">
+              <img src="public/cwru_two-line_horizontal_(primary)_logo_rgb_blue-200h.png"
+                   alt="Case Western Reserve University Logo" />
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         RESEARCH
+         ══════════════════════════════════════════════════════════ -->
+    <section id="research" class="section section-alt">
+      <div class="container">
+        <span class="section-label">Academic Research</span>
+        <h2 class="section-title">Research</h2>
+
+        <div class="research-grid">
+
+          <!-- ── Research card: Project 8 ── -->
+          <!-- To add a new research project, copy one <article> block below -->
+          <article class="research-card">
+            <div class="research-logo">
+              <a href="https://www.project8.org/"
+                 target="_blank"
+                 rel="noreferrer noopener"
+                 aria-label="Project 8 website">
+                <img src="public/project8-logo.png"
+                     alt="Project 8 Collaboration Logo" />
+              </a>
+            </div>
+            <div class="research-body">
+              <h3>Project 8 Collaboration</h3>
+              <p>
+                The Project 8 experiment aims to measure the absolute mass of the neutrino
+                through the beta decay of tritium. It uses a novel technique called
+                cyclotron radiation emission spectroscopy (CRES) to measure the energy
+                spectrum of emitted electrons with unprecedented precision.
+              </p>
+              <img src="public/p8_decay-1000w.png"
+                   alt="Tritium beta decay diagram for Project 8"
+                   class="research-figure"
+                   loading="eager" />
+              <p>
+                Within the collaboration, I led machine learning efforts including a
+                U-Net-based deep convolutional autoencoder for segmenting class-imbalanced
+                spectrogram images, improving efficiency over traditional methods by
+                over 20%. I pioneered novel applications of NLP techniques for complex
+                pattern detection in noisy signals, and explored physics-informed
+                generative AI for reproducing electromagnetic signals from particle
+                interactions. I also contributed to simulation projects including resonant
+                cavity mode filtering and sensitivity analysis.
+              </p>
+              <p>Recent publications are listed in the Publication section.</p>
+            </div>
+          </article>
+
+          <!-- ── Research card: Roche ── -->
+          <article class="research-card">
+            <div class="research-logo">
+              <img src="public/Hoffmann-La_Roche_logo.svg"
+                   alt="Hoffmann-La Roche Logo" />
+            </div>
+            <div class="research-body">
+              <h3>Roche Diabetes Care Internship</h3>
+              <p>
+                In Summer 2024, I interned at Roche Diabetes Care Inc. in the Mathematics,
+                Algorithms &amp; Data Sciences department, focusing on algorithms and
+                advanced analytics.
+              </p>
+              <ul class="research-bullets">
+                <li>Developed virtual patient models from real-world clinical data</li>
+                <li>Built predictive models for diabetes management tools</li>
+                <li>Assessed novel techniques to reduce external dependencies</li>
+                <li>Performed independent data analysis and model building</li>
+                <li>Reported findings to the project team, department, and R&amp;D</li>
+              </ul>
+              <hr class="research-divider" />
+              <p>
+                Previously, I also worked with the Gravitational Wave International
+                Committee (GWIC) and the
+                <a href="https://www.linkedin.com/school/communityofphysics/"
+                   target="_blank"
+                   rel="noreferrer noopener">Community of Physics</a>.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         CAREER TIMELINE
+         To add a new node, copy a <div class="timeline-item"> block.
+         Use class="timeline-item--current" for the active role.
+         ══════════════════════════════════════════════════════════ -->
+    <section id="timeline" class="section">
+      <div class="container">
+        <span class="section-label">Career</span>
+        <h2 class="section-title">Journey</h2>
+
+        <div class="timeline">
+
+          <!-- ── Node 1: Undergraduate ── -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">Undergraduate</span>
+              <h3>B.S. Physics</h3>
+              <p class="timeline-org">University of Dhaka</p>
+              <p>
+                Studied physics and developed early interests in data analysis and
+                experimental methods. Became involved with the
+                <a href="https://www.linkedin.com/school/communityofphysics/"
+                   target="_blank"
+                   rel="noreferrer noopener">Community of Physics</a>
+                and the Gravitational Wave International Committee (GWIC).
+              </p>
+            </div>
+          </div>
+
+          <!-- ── Node 2: PhD ── -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2019 &ndash; 2025</span>
+              <h3>Doctor of Philosophy, Physics</h3>
+              <p class="timeline-org">Case Western Reserve University</p>
+              <p>
+                Conducted experimental particle astrophysics research in the
+                <a href="https://bmonreal.github.io/"
+                   target="_blank"
+                   rel="noreferrer noopener">Monreal Lab</a>
+                and the Project 8 Collaboration, pursuing research at the intersection
+                of statistical modeling, deep learning, and neutrino physics.
+              </p>
+
+              <!-- Sub-item: Roche internship during PhD -->
+              <div class="timeline-subitem">
+                <span class="timeline-tag">Internship</span>
+                <span class="timeline-date">Summer 2024</span>
+                <h4>Data Science Intern</h4>
+                <p class="timeline-org">Roche Diabetes Care Inc.</p>
+                <p>
+                  Mathematics, Algorithms &amp; Data Sciences department.
+                  Developed virtual patient models and predictive tools for
+                  diabetes management using real-world clinical data.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Node 3: Cleveland Clinic (current) ── -->
+          <div class="timeline-item timeline-item--current">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-tag">Current</span>
+              <span class="timeline-date">2025 &ndash; Present</span>
+              <h3>Data Scientist II</h3>
+              <p class="timeline-org">Neurological Institute, Cleveland Clinic</p>
+              <p>
+                Applying machine learning and statistical modeling to clinical data
+                to improve patient care and outcomes in neurointensive care.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         PUBLICATIONS
+         Content is rendered by main.js from the publications[] array.
+         To add a new publication, prepend an entry to that array.
+         ══════════════════════════════════════════════════════════ -->
+    <section id="publications" class="section section-alt">
+      <div class="container">
+        <span class="section-label">Academic Output</span>
+        <h2 class="section-title">Publications</h2>
+
+        <ol class="pub-list" id="pub-list" aria-label="List of publications">
+          <!-- Rendered by main.js renderPublications() -->
+        </ol>
+
+        <div class="pub-actions">
+          <a href="https://inspirehep.net/authors/1840725"
+             target="_blank"
+             rel="noreferrer noopener"
+             class="btn btn-primary">
+            View All on InspireHEP
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SKILLS
+         Content is rendered by main.js from the skills[] array.
+         To edit skills, update that array.
+         ══════════════════════════════════════════════════════════ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <span class="section-label">Technical</span>
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-grid" id="skills-grid" aria-label="Skills by category">
+          <!-- Rendered by main.js renderSkills() -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         ABOUT
+         ══════════════════════════════════════════════════════════ -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <span class="section-label">Personal</span>
+        <h2 class="section-title">About</h2>
+
+        <div class="about-text">
+          <p>
+            I&rsquo;m a physicist by training and a data scientist by practice. I
+            completed my Ph.D. in Physics at Case Western Reserve University in 2025,
+            where I spent years untangling signals from noise, quite literally, in
+            the search for the elusive neutrino mass. I now bring that same rigor and creative thinking to
+            clinical data at the Neurological Institute of Cleveland Clinic.
+          </p>
+          <p>
+            Outside of work, I&rsquo;m an avid photographer with a love for landscapes
+            and architecture. When I&rsquo;m not in front of a screen, I&rsquo;m likely
+            working on a home or car project, reading, exploring new realms through video
+            games, or staying active with tennis, soccer, and basketball.
+            I&rsquo;m always looking for ways to grow and stay curious.
+          </p>
+          <a href="Curriculum_Vitae_Razu_Mohiuddin.pdf"
+             target="_blank"
+             rel="noreferrer noopener"
+             class="btn btn-primary">
+            Download CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         CONTACT
+         Email is assembled by main.js initEmail() — never in HTML source.
+         ══════════════════════════════════════════════════════════ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-email-wrap">
+          <p class="contact-email-label">Feel free to reach out by email:</p>
+          <!-- Email assembled by JS; placeholder hidden from scrapers -->
+          <a id="email-link" class="email-link" href="#" aria-label="Email address">&nbsp;</a>
+        </div>
+
+        <div class="contact-cards">
+
+          <!-- Card 1: Mailing address -->
+          <div class="contact-card">
+            <div class="contact-card-header">
+              <h3>Address</h3>
+            </div>
+            <div class="contact-card-body">
+              <address>
+                <p>Cerebrovascular Center | Neurological Institute</p>
+                <p>Cleveland Clinic</p>
+                <p>9500 Euclid Avenue</p>
+                <p>Cleveland, OH 44195</p>
+              </address>
+            </div>
+          </div>
+
+          <!-- Card 2: Links -->
+          <div class="contact-card">
+            <div class="contact-card-header">
+              <h3>Links</h3>
+            </div>
+            <div class="contact-card-body">
+              <ul>
+                <li>
+                  <a href="https://my.clevelandclinic.org/departments/neurological"
+                     target="_blank"
+                     rel="noreferrer noopener">Cleveland Clinic Neurological Institute</a>
+                </li>
+                <li>
+                  <a href="https://bmonreal.github.io/"
+                     target="_blank"
+                     rel="noreferrer noopener">Monreal Lab</a>
+                </li>
+                <li>
+                  <a href="https://www.project8.org"
+                     target="_blank"
+                     rel="noreferrer noopener">The Project 8 Experiment</a>
+                </li>
+                <li>
+                  <a href="https://physics.case.edu/"
+                     target="_blank"
+                     rel="noreferrer noopener">CWRU Physics Department</a>
+                </li>
+                <li>
+                  <a href="https://scholar.google.com/citations?user=JLcRozYAAAAJ&hl=en"
+                     target="_blank"
+                     rel="noreferrer noopener">Google Scholar Profile</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-socials">
+
+      <a href="https://www.linkedin.com/in/mohiuddinrazu/"
+         target="_blank" rel="noreferrer noopener"
+         class="footer-social-link" aria-label="LinkedIn Profile">
+        <img src="public/linkedin-icon.svg" alt="LinkedIn" />
+      </a>
+
+      <a href="https://scholar.google.com/citations?user=JLcRozYAAAAJ&hl=en"
+         target="_blank" rel="noreferrer noopener"
+         class="footer-social-link" aria-label="Google Scholar Profile">
+        <img src="public/google_scholar-icon.svg" alt="Google Scholar" />
+      </a>
+
+      <a href="https://inspirehep.net/authors/1840725"
+         target="_blank" rel="noreferrer noopener"
+         class="footer-social-link" aria-label="InspireHEP Profile">
+        <img src="public/inspire-icon-200h.png" alt="InspireHEP" />
+      </a>
+
+      <a href="https://www.researchgate.net/profile/Razu-Mohiuddin"
+         target="_blank" rel="noreferrer noopener"
+         class="footer-social-link" aria-label="ResearchGate Profile">
+        <img src="public/researchgate-icon-200h.png" alt="ResearchGate" />
+      </a>
+
+      <a href="https://github.com/mohiuddinrazu/"
+         target="_blank" rel="noreferrer noopener"
+         class="footer-social-link" aria-label="GitHub Profile">
+        <img src="public/github.svg" alt="GitHub" />
+      </a>
+
+      <a href="https://www.twitter.com/mohiuddin_razu/"
+         target="_blank" rel="noreferrer noopener"
+         class="footer-social-link" aria-label="X (Twitter) Profile">
+        <img src="public/x-logo.svg" alt="X (Twitter)" />
+      </a>
+
+      <a href="https://www.instagram.com/mohiuddinrazu/"
+         target="_blank" rel="noreferrer noopener"
+         class="footer-social-link" aria-label="Instagram Profile">
+        <img src="public/instagram.svg" alt="Instagram" />
+      </a>
+
+      <a href="https://www.facebook.com/mohiuddinrazu/"
+         target="_blank" rel="noreferrer noopener"
+         class="footer-social-link" aria-label="Facebook Profile">
+        <img src="public/facebook-200h.png" alt="Facebook" />
+      </a>
+
+    </div>
+
+    <p class="footer-copy">
+      &copy; <span id="copyright-year"></span> Razu Mohiuddin
+    </p>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FLOATING SOCIAL BUTTONS
+       Fixed bottom-right. pointer-events: none on container so
+       they never intercept clicks on underlying page content.
+       ══════════════════════════════════════════════════════════ -->
+  <div class="floating-btns" aria-hidden="true">
+    <a href="https://www.linkedin.com/in/mohiuddinrazu/"
+       target="_blank" rel="noreferrer noopener"
+       class="floating-btn" aria-label="LinkedIn Profile">
+      <img src="public/linkedin-icon.svg" alt="LinkedIn" />
+    </a>
+    <a href="https://scholar.google.com/citations?user=JLcRozYAAAAJ&hl=en"
+       target="_blank" rel="noreferrer noopener"
+       class="floating-btn" aria-label="Google Scholar Profile">
+      <img src="public/google_scholar-icon.svg" alt="Google Scholar" />
+    </a>
+    <a href="https://github.com/mohiuddinrazu/"
+       target="_blank" rel="noreferrer noopener"
+       class="floating-btn" aria-label="GitHub Profile">
+      <img src="public/github.svg" alt="GitHub" />
+    </a>
+  </div>
+
+</body>
 </html>
