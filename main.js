@@ -1,18 +1,13 @@
 /* ================================================================
-   main.js - Razu Mohiuddin Portfolio Quick Self-reminders
+   Quick update self-reminders
    ================================================================
-   DATA:
-     publications[]  <-- Add new entries at the TOP (most recent first)
-     skills[]        <-- Edit categories/items to update skills
-
-   HOW TO UPDATE:
-     > New publication: prepend an object to publications[]
-     > New skill:       add to the relevant category in skills[]
-     > Email:           update the 'u' and 'd' variables in initEmail()
+     - New publication: prepend an object to publications[]
+     - New skill      : add to the relevant category in skills[]
    ================================================================ */
 
 /* ── Theme initialization ─────────────────────────────────────────
-   NOTE: A tiny inline <script> in <head> also does this to prevent
+   Make sure always start in dark theme. 
+   A tiny inline <script> in <head> also does this to prevent
    flash-of-wrong-theme. This block here re-applies on load for
    correctness in edge cases.
    ──────────────────────────────────────────────────────────────── */
@@ -22,8 +17,8 @@
 })();
 
 /* ── Publications ─────────────────────────────────────────────────
-   Add new entries at the TOP. Fields:
-     title  (string)  - full paper title
+   Reminder: Add latest to TOP. Available fields:
+     title  (string)
      venue  (string)  - journal or conference abbreviation
      detail (string)  - volume, year, page
      url    (string|null) - DOI or arXiv link; null = no link
@@ -51,7 +46,7 @@ const publications = [
     title:  'Deep Learning based CRES track and event reconstruction in Project 8',
     venue:  'APS DNP',
     detail: '2022',
-    url:    null
+    url:    'https://meetings.aps.org/Meeting/DNP22/Session/LD.6'
   },
   {
     title:  'The Project 8 Neutrino Mass Experiment',
@@ -73,9 +68,7 @@ const publications = [
   }
 ];
 
-/* ── Skills ───────────────────────────────────────────────────────
-   Edit categories and items to reflect your current skill set.
-   ──────────────────────────────────────────────────────────────── */
+/* ── Skills ─────────────────────────────────────────────────────── */
 const skills = [
   {
     category: 'Languages',
@@ -145,8 +138,7 @@ function renderSkills() {
   });
 }
 
-/* ── Email assembly (anti-scraper) ───────────────────────────────
-   ──────────────────────────────────────────────────────────────── */
+/* ── Email assembly (anti-scraper?) ─────────────────────────────── */
 function initEmail() {
   const el = document.getElementById('email-link');
   if (!el) return;
@@ -158,7 +150,7 @@ function initEmail() {
   el.textContent = u + '@' + d;
 }
 
-/* ── Dynamic copyright year ──────────────────────────────────── */
+/* ── Copyright year ──────────────────────────────────── */
 function initCopyrightYear() {
   const el = document.getElementById('copyright-year');
   if (el) el.textContent = new Date().getFullYear();
@@ -199,7 +191,7 @@ function initMobileMenu() {
 
 /* ── Theme toggle ────────────────────────────────────────────── */
 function setThemeIcon(btn, theme) {
-  // Show sun when in dark mode (→ switch to light), moon when in light mode (→ switch to dark)
+  // Show sun when in dark mode (-> switch to light), moon when in light mode (-> switch to dark)
   if (theme === 'dark') {
     btn.innerHTML =
       '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" ' +
